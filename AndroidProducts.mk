@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_X00TD.mk
+    $(LOCAL_DIR)/potato_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_X00TD-user \
-    corvus_X00TD-userdebug \
-    corvus_X00TD-eng
+    potato_X00TD-user \
+    potato_X00TD-userdebug \
+    potato_X00TD-eng

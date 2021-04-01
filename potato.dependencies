@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "Pranavkapoor001/kernel_asus_sdm660",
+    "target_path": "kernel/asus/sdm660",
+    "branch": "Stardust",
+    "remote": "gitlab"
+  },
+  {
+    "repository" : "pkm774/vendor_asus_X00TD",
+    "target_path": "vendor/asus",
+    "branch": "11",
+    "remote": "github"
+  }
+]
