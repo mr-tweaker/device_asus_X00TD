@@ -607,7 +607,6 @@ PRODUCT_PACKAGES += \
     
 # Prebuilts
 PRODUCT_PACKAGES += \
-    GoogleCameraGo \
     RMPlayer \
     Sounds
     
