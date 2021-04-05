@@ -268,7 +268,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1
     
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=pkm774
 

@@ -58,6 +58,10 @@
 
     <!-- Button backlight -->
     <integer name="config_buttonBrightnessSettingDefault">0</integer>
+
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
     
 </resources>
 

@@ -21,6 +21,10 @@
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
+
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">5</integer>
 

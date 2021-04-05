@@ -19,13 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Corvus stuff
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+# Inherit some common ShapeshiftOS stuff
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # Poduct spec
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 scr_resolution := 1080
 
@@ -35,7 +34,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := corvus_X00TD
+PRODUCT_NAME := ssos_X00TD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
@@ -46,4 +45,10 @@ BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/relea
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
     
+# Inherit ShapeShiftOS Official build stuff.
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.ssos.cpu=SD636
 
+SSOS_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
